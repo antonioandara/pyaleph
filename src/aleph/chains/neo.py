@@ -71,7 +71,7 @@ async def verify_signature(message):
             bytes.fromhex(signature['publicKey']),
             unhex=True)
     except Exception:
-        LOGGER.exception("NULS Signature verification error")
+        LOGGER.exception("NEO Signature verification error")
         result = False
         
     return result
