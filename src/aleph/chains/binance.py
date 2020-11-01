@@ -36,7 +36,7 @@ register_verifier(CHAIN_NAME, verify_signature)
 
 
 async def get_last_height():
-    """ Returns the last height for which we already have the nuls data.
+    """ Returns the last height for which we already have the chain data.
     """
     last_height = await Chain.get_last_height(CHAIN_NAME)
 
